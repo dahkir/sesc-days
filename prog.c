@@ -1,18 +1,18 @@
 #include <stdio.h>
 #include <math.h>
 
+int fact1(int n){
+  int count=1;
+  for (int i=1;i<=n;i++){
+    count*=i;
+  }
+  return count;
+}
+
 int main(void) {
-  int n, num;
-  scanf("%d", &n);
-  num+=floor(n/5);
-  num+=floor(n/25);
-  num+=floor(n/125);
-  num+=floor(n/625);
-  num+=floor(n/3125);
-  num+=floor(n/15625);
-  num+=floor(n/78125);
-  num+=floor(n/390625);
-  num+=floor(n/1953125);
-  printf("%d", num);
+  int x, y;
+  scanf("%d%d", &x, &y);
+  printf("%d",(fact1(x-1)/fact1(y-1))/fact1(x-y));
   return 0;
 }
+
