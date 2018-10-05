@@ -9,6 +9,10 @@ int main(void) {
   num+=floor(n/125);
   num+=floor(n/625);
   num+=floor(n/3125);
+  num+=floor(n/15625);
+  num+=floor(n/78125);
+  num+=floor(n/390625);
+  num+=floor(n/1953125);
   printf("%d", num);
   return 0;
 }
