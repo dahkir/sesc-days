@@ -2,14 +2,13 @@
 #include <math.h>
 
 int main(void) {
-  int days, weeks, years;
-  scanf("%d", &days);
-  years = floor(days/365);
-  days%=365;
-  weeks = floor(days/7);
-  days%=7;
-  printf("years: %d\n", years);
-  printf("weeks: %d\n", weeks);
-  printf("days: %d", days);
+  int n, num;
+  scanf("%d", &n);
+  num+=floor(n/5);
+  num+=floor(n/25);
+  num+=floor(n/125);
+  num+=floor(n/625);
+  num+=floor(n/3125);
+  printf("%d", num);
   return 0;
 }
