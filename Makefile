@@ -1,5 +1,5 @@
 run:prog
 	./prog
 prog:prog.c
-	gcc -lm prog.c -o prog
+	gcc prog.c -lm -o prog
 build:prog
