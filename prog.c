@@ -2,8 +2,14 @@
 #include <math.h>
 
 int main(void) {
-  float n;
-  scanf("%f", &n);
-  printf("%.3f", n*n*sqrt(3)/4);
+  int days, weeks, years;
+  scanf("%d", &days);
+  years = floor(days/365);
+  days%=365;
+  weeks = floor(days/7);
+  days%=7;
+  printf("years: %d\n", years);
+  printf("weeks: %d\n", weeks);
+  printf("days: %d", days);
   return 0;
 }
